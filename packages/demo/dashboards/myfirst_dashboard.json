@@ -1,0 +1,48 @@
+{
+  "title": "My first dashboard",
+  "titleVisible": false,
+
+  "description": "My first dashboard description goes here",
+
+  "layout": {
+    "customJS" : ["jquery.peity.js", "md5.js"],
+    "gridSize" : { "columns" : 6, "rows" : 4 },
+    "widgets" : [
+      {"row" : 1, "col" : 2, "width" : 2, "height" : 2, "widget" : "default#pi-light", "job" : "default#pi-light",         "config": "clockLight"}
+
+    ]
+  },
+
+  "config" : {
+
+    "clockTemperature": {
+      "content": "Temperature Reading",
+      "interval": 0,
+      "stfuOnly": false,
+      "stfuHours":[
+        {"start":945, "end": 1215},
+        {"start":1415, "end": 1615}
+      ]
+    },
+
+    "clockHumidity": {
+      "content": "Humidity Reading",
+      "interval": 1,
+      "stfuOnly": false,
+      "stfuHours":[
+        {"start":945, "end": 1215},
+        {"start":1415, "end": 1615}
+      ]
+    },
+
+    "clockLight": {
+      "content": "Light Reading",
+      "interval": 0,
+      "stfuOnly": false,
+      "stfuHours":[
+        {"start":945, "end": 1215},
+        {"start":1415, "end": 1615}
+      ]
+    }
+  }
+}
