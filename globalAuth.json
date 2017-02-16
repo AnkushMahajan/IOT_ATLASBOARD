@@ -1,0 +1,10 @@
+{
+    "stash":{
+        "username":"",
+        "password":""
+    },
+    "jira":{
+        "username":"",
+        "password":""
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "license": "Apache License, Version 2.0",
+  "author": "AtlasBoard",
+  "name": "your-dashboard-name-here",
+  "description": "A dashboard built for AtlasBoard",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "npm": "~2.0.0",
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "mocha": "2.3.0"
+  },
+  "scripts": {
+    "preinstall": "npm i -g atlasboard",
+    "start": "node start",
+    "test": "find . -regex '.*/jobs/.*/test/.*.js' | xargs mocha"
+  },
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.14",
+    "nodemailer": "^2.7.0",
+    "nodemailer-ses-transport": "^1.5.0"
+  }
+}
